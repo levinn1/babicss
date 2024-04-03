@@ -1,0 +1,108 @@
+body {
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .pig {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: pink;
+    position: relative;
+  }
+
+  .ear {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid magenta;
+    position: absolute;
+    top: 10px;
+  }
+  
+  
+  .ear.left {
+    left: -20px;
+    transform: rotateZ(20deg);
+  }
+  
+  .ear.right {
+    right: -20px;
+    transform: rotateZ(-20deg);
+  }
+  
+  .eye {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+  }
+  
+  .eye.left {
+    left: 90px;
+  }
+  
+  .eye.right {
+    right: 90px;
+  }
+  
+  .pupil {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+  }
+  
+  .nose {
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 120px;
+    left: 150px;
+  }
+  
+  .nostril {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: magenta;
+    position: absolute;
+  }
+  
+  .nostril.left {
+    left: 10px;  
+    top: 20px;
+  }
+  
+  .nostril.right {
+    right: 10px;
+    top: 20px;
+  }
+  
+  .mouth {
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(to top, black 50%, transparent 0%);
+    position: absolute;
+    bottom: 50px;
+    left: 153px;
+  }
+  
